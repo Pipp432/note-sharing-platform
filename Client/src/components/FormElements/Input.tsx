@@ -38,7 +38,7 @@ const Input = (props: any) => {
 		props.element === "input" ? (
 			<input
 				id={props.id}
-				type='text'
+				type={props.type}
 				placeholder={props.placeholder}
 				onChange={changeHandler}
 				onBlur={touchHandler}
