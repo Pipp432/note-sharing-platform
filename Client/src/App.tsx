@@ -11,6 +11,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import MainNavigation from "./components/NavElement/MainNavigation";
+import MyNote from "./pages/MyNote";
 
 const userReducer = (state: any, action: any) => {
 	switch (action.type) {
@@ -39,28 +40,30 @@ function App() {
 			>
 				<Router>
 					<MainNavigation />
-					<Switch>
-						<Route path='/' exact>
-							<Home />
-						</Route>
-						<Route path='/login' exact>
-							<Login />
-						</Route>
-						<Route path='/my_note' exact>
-							<Login />
-						</Route>
-						<Route path='/find_note' exact>
-							<Login />
-						</Route>
-						<Route path='/upload_note' exact>
-							<Login />
-						</Route>
-						<Route path='/auth' exact>
-							<Login />
-						</Route>
+					<main>
+						<Switch>
+							<Route path='/' exact>
+								<Home />
+							</Route>
+							<Route path='/login' exact>
+								<Login />
+							</Route>
+							<Route path='/my_note' exact>
+								<MyNote />
+							</Route>
+							<Route path='/find_note' exact>
+								<Login />
+							</Route>
+							<Route path='/upload_note' exact>
+								<Login />
+							</Route>
+							<Route path='/auth' exact>
+								<Login />
+							</Route>
 
-						<Redirect to='/' />
-					</Switch>
+							<Redirect to='/' />
+						</Switch>
+					</main>
 				</Router>
 			</UserContext.Provider>
 		</div>
