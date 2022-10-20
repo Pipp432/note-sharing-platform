@@ -14,6 +14,7 @@ import MainNavigation from "./components/NavElement/MainNavigation";
 import MyNote from "./pages/MyNote";
 
 const userReducer = (state: any, action: any) => {
+	console.log("called");
 	switch (action.type) {
 		case "ADD":
 			return (state["user"] = {
@@ -42,10 +43,10 @@ function App() {
 					<MainNavigation />
 					<main>
 						<Switch>
-							<Route path='/' exact>
+							<Route path='/home' exact>
 								<Home />
 							</Route>
-							<Route path='/login' exact>
+							<Route path='/' exact>
 								<Login />
 							</Route>
 							<Route path='/my_note' exact>

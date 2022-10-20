@@ -1,0 +1,13 @@
+.home--center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 200px;
+	text-align: center;
+	font-size: 40px;
+}
+.home--center p {
+	font-size: 20px;
+}

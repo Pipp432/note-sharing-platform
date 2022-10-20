@@ -1,6 +1,6 @@
 import Item from "../components/UIElements/Item";
 import "./MyNote.css";
-const MyNote = (props: any) => {
+const MyNote = () => {
 	return (
 		<div>
 			<div className='item-container'>

@@ -14,7 +14,7 @@ const Login = (props: any) => {
 		event.preventDefault();
 		dispatch({ type: "ADD", payload: { username: "Pipp", password: "lmao" } });
 		console.log(userState);
-		history.push("/");
+		history.push("/home");
 	};
 	return (
 		<>
@@ -34,7 +34,11 @@ const Login = (props: any) => {
 						type='password'
 						element='input'
 					/>
-					<Button label='SUBMIT' clickHandler={submitHandler} />
+					<Button
+						label='SUBMIT'
+						clickHandler={submitHandler}
+						className='form--button'
+					/>
 				</form>
 			</Card>
 		</>
