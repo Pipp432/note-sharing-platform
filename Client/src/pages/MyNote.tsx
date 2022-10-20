@@ -2,7 +2,7 @@ import Item from "../components/UIElements/Item";
 import "./MyNote.css";
 const MyNote = () => {
 	return (
-		<div>
+		<>
 			<div className='item-container'>
 				<Item
 					title='Calculus I'
@@ -29,7 +29,7 @@ const MyNote = () => {
 					src='https://www.aakash.ac.in/blog/wp-content/uploads/2022/04/Blog-Image-30.jpg'
 				/>
 			</div>
-		</div>
+		</>
 	);
 };
 export default MyNote;

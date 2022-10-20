@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import MainNavigation from "./components/NavElement/MainNavigation";
 import MyNote from "./pages/MyNote";
+import Profile from "./pages/Profile";
 
 const userReducer = (state: any, action: any) => {
 	console.log("called");
@@ -58,8 +59,8 @@ function App() {
 							<Route path='/upload_note' exact>
 								<Login />
 							</Route>
-							<Route path='/auth' exact>
-								<Login />
+							<Route path='/profile' exact>
+								<Profile />
 							</Route>
 
 							<Redirect to='/' />

@@ -19,3 +19,33 @@
 .start--button:hover {
 	background-color: rgb(58, 186, 58);
 }
+.view-item--button {
+	width: 100px;
+	height: 50px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	border-style: hidden;
+	border-radius: 10px;
+}
+.view-item--button:hover {
+	background-color: greenyellow;
+}
+.delete-item--button {
+	width: 100px;
+	height: 50px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	border-style: hidden;
+	border-radius: 10px;
+}
+.delete-item--button:hover {
+	background-color: rgb(255, 47, 47);
+}
+.update-item--button {
+	width: 100px;
+	height: 50px;
+
+	border-style: hidden;
+	border-radius: 10px;
+}
+.update-item--button:hover {
+	background-color: rgb(168, 47, 255);
+}
