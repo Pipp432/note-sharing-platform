@@ -1,5 +1,5 @@
 .item-container {
-	width: 900px;
+	width: 90p00px;
 	position: absolute;
 	right: 0;
 	display: flex;
@@ -21,4 +21,5 @@
 .filter-button:hover {
 	background-color: cadetblue;
 	color: rgba(0, 0, 0, 0.5);
+	height: 30;
 }
