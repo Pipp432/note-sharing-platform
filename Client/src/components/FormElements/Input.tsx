@@ -1,5 +1,5 @@
 import "./Input.css";
-import { useReducer } from 'react';
+import { useReducer } from "react";
 
 const inputReducer = (state: any, action: any) => {
 	switch (action.type) {

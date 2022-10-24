@@ -4,3 +4,44 @@
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
+.center-below {
+	position: absolute;
+	left: 50%;
+	top: 75%;
+	transform: translate(-50%, -50%);
+}
+.img-container {
+	display: flex;
+	gap: 20px;
+}
+.center-below img {
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.36);
+}
+.login-title {
+	position: absolute;
+	left: 50%;
+	top: 25%;
+	transform: translate(-50%, -50%);
+	font-family: "Comfortaa-Bold";
+	font-size: 70px;
+}
+.signUp {
+	position: absolute;
+	left: 50%;
+	top: 87%;
+	transform: translate(-50%, -50%);
+}
+.title {
+	color: rgba(222, 92, 142, 1);
+}
+.sub-title {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 15px;
+}
+@font-face {
+	font-family: "Comfortaa-Bold";
+
+	src: url("../fonts/Comfortaa-Bold.ttf") format("truetype");
+}

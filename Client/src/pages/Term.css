@@ -1,0 +1,25 @@
+.term-title {
+	margin-right: 10px;
+	padding: 15px;
+	width: 100%;
+	font-size: 40px;
+	font-family: "Comfortaa-Bold";
+	background-color: rgba(255, 228, 249, 1);
+}
+.term-content {
+	font-family: "Comfortaa";
+	font-size: 30px;
+	margin: 20px;
+}
+.term-content li {
+	margin: 50px;
+}
+.middle {
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+@font-face {
+	font-family: "Comfortaa-Bold";
+
+	src: url("../fonts/Comfortaa-Bold.ttf") format("truetype");
+}

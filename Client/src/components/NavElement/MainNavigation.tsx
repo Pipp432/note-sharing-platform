@@ -32,7 +32,7 @@ const MainNavigation = (props: any) => {
 					<span />
 				</button>
 				<h1 className='main-navigation__title'>
-					<Link to='/'>Notable</Link>
+					<Link to='/'>ChulaNotes</Link>
 				</h1>
 				<nav className='main-navigation__header-nav'>
 					<NavLinks />

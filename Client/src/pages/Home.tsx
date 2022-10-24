@@ -15,7 +15,8 @@ const Home = (props: any) => {
 		<Card className='home--center'>
 			Hello, {userState.username}
 			<p>
-				Welcome to Notable, a knowledge sharing place. By students, For students
+				Welcome to ChulaNote, a knowledge sharing place. By students, For
+				students
 			</p>
 			<Button
 				className='start--button'

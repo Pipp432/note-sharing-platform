@@ -1,12 +1,18 @@
 .form--button {
-	width: 100px;
+	width: 300px;
 	height: 50px;
+	margin-left: 10px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 	border-style: hidden;
 	transition: 0.5s;
+	background-color: rgba(255, 228, 249, 1);
+	border-radius: 20px;
+	font-family: "Comfortaa";
+	font-size: large;
 }
 .form--button:hover {
-	background-color: rgb(58, 186, 58);
+	scale: 1.05;
+	background-color: rgb(251, 194, 239);
 }
 .start--button {
 	width: 100px;
@@ -48,4 +54,9 @@
 }
 .update-item--button:hover {
 	background-color: rgb(168, 47, 255);
+}
+@font-face {
+	font-family: "Comfortaa";
+
+	src: url("../../fonts/Comfortaa-Regular.ttf") format("truetype");
 }

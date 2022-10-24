@@ -1,6 +1,7 @@
 .nav-links {
 	list-style: none;
 	margin: 0;
+	margin-right: 40px;
 	padding: 0;
 	width: 100%;
 	height: 100%;
@@ -49,7 +50,18 @@
 	background: #292929;
 	color: white;
 }
-
+.nav-links img {
+	border-radius: 50%;
+}
+.nav-links select {
+	border-style: none;
+	font-family: "Comfortaa-Bold";
+	font-size: large;
+	text-align: center;
+	background-color: transparent;
+	width: 200px;
+	height: 40px;
+}
 @media (min-width: 768px) {
 	.nav-links {
 		flex-direction: row;

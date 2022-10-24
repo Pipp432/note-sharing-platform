@@ -12,9 +12,10 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import MainNavigation from "./components/NavElement/MainNavigation";
 import MyNote from "./pages/MyNote";
+import Profile from "./pages/Profile";
 import FindNotes from "./pages/FindNotes";
 import Upload from "./pages/Upload";
-import Profile from "./pages/Profile";
+import Term from "./pages/Term";
 
 const userReducer = (state: any, action: any) => {
 	console.log("called");
@@ -44,15 +45,20 @@ function App() {
 				value={{ userState: userState, dispatch: dispatch }}
 			>
 				<Router>
-					{userState.Login && <MainNavigation />}
+					{<MainNavigation />}
 					<main>
 						<Switch>
-							<Route path='/home' exact>
-								<Home />
-							</Route>
 							<Route path='/' exact>
 								<Login />
 							</Route>
+
+							<Route path='/term_condition' exact>
+								<Term />
+							</Route>
+							<Route path='/home' exact>
+								<Home />
+							</Route>
+
 							<Route path='/my_note' exact>
 								<MyNote />
 							</Route>

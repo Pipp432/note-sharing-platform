@@ -1,26 +1,35 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "./NavLinks.css";
 const NavLinks = (props: any) => {
+	const history = useHistory();
+	const selectHandler = (event: any) => {
+		history.push(`/${event.target.value}`);
+	};
 	return (
 		<ul className='nav-links'>
 			<li>
 				<NavLink to='/my_note' exact>
-					MY NOTES
+					REWARDS
 				</NavLink>
 			</li>
 			<li>
-				<NavLink to='/find_note'>FIND NOTES</NavLink>
+				<select onChange={selectHandler}>
+					<option value={"find_note"}>FIND NOTES</option>
+					<option value={"upload_note"}>UPLOAD NOTE</option>
+					<option value={"auth"}>AUTHENTICATE</option>
+				</select>
 			</li>
-			<li>
-				<NavLink to='/upload_note'>UPLOAD NOTE</NavLink>
-			</li>
-			<li>
-				<NavLink to='/auth'>AUTHENTICATE</NavLink>
-			</li>
-			<li>
-				<NavLink to='/profile'>PROFILE</NavLink>
-			</li>
+
+			<NavLink to='/profile'>
+				<img
+					alt='pfp'
+					src='https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg'
+					width='60px'
+					height='60px'
+				/>
+			</NavLink>
 		</ul>
 	);
 };

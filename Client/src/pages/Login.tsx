@@ -21,29 +21,62 @@ const Login = (props: any) => {
 	};
 	return (
 		<>
-			<Card className='center'>
+			<div className='login-title'>
+				<span className='title'>Chula</span>Notes
+				<br />
+				<div className='sub-title'>
+					Notes - Sharing Platform for CU Students
+				</div>
+			</div>
+			<div className='center'>
 				<form>
 					<Input
-						label='Enter a username'
+						label='Email'
 						errorText='Enter a valid username'
 						id='username'
 						type='input'
 						element='input'
+						placeholder='name@email.com'
 					/>
 					<Input
-						label='Enter password'
+						label='Password'
 						errorText='Enter a valid password'
 						id='password'
 						type='password'
 						element='input'
+						placeholder='Enter your password'
 					/>
 					<Button
-						label='SUBMIT'
+						label='LOGIN'
 						clickHandler={submitHandler}
 						className='form--button'
 					/>
 				</form>
+			</div>
+			<Card className='center-below'>
+				<div className='img-container'>
+					<img
+						src='https://play-lh.googleusercontent.com/0luBuKQvAQQA3s1nyw1q-xOmIGeWXDAKeXUo6IrrZTt90-pFihfCoEjEJmnSWIy5kr4'
+						alt='CUNEX'
+						width='50px'
+						height='50px'
+					/>
+					<img
+						src='https://cdn-icons-png.flaticon.com/512/124/124010.png'
+						alt='facebook'
+						width='50px'
+						height='50px'
+					/>
+					<img
+						src='https://pbs.twimg.com/media/ElXTrHcXEAACIZE?format=jpg&name=small'
+						alt='Gmail'
+						width='50px'
+						height='50px'
+					/>
+				</div>
 			</Card>
+
+			<div className='signUp'>New to ChulaNotes? Sign up</div>
 		</>
 	);
 };

@@ -1,5 +1,5 @@
 import Item from "../components/UIElements/Item";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./MyNote.css";
 import Card from "../components/UIElements/Card";
 import Button from "../components/UIElements/Button";
