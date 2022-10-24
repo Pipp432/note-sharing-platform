@@ -43,6 +43,7 @@ const Input = (props: any) => {
 				onChange={changeHandler}
 				onBlur={touchHandler}
 				value={inputState.value}
+				className={props.className}
 			/>
 		) : (
 			<textarea
@@ -51,6 +52,7 @@ const Input = (props: any) => {
 				onChange={changeHandler}
 				value={inputState.value}
 				onBlur={touchHandler}
+				className={props.className}
 			/>
 		);
 	return (

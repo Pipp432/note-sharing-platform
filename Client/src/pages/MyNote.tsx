@@ -1,8 +1,14 @@
 import Item from "../components/UIElements/Item";
 import "./MyNote.css";
+import Card from "../components/UIElements/Card";
+import Button from "../components/UIElements/Button";
 const MyNote = () => {
 	return (
 		<>
+			<Card className='card-stats'>
+				<h1>Catagory</h1>
+				<Button label='Mechanics' className='filter-button' />
+			</Card>
 			<div className='item-container'>
 				<Item
 					title='Calculus I'
