@@ -1,0 +1,25 @@
+.uploadCard {
+    width: 60vw;
+    height: 50vh;
+    position: relative;
+    margin: auto;
+    margin-top: 25vh;
+    border-radius: 20px;
+}
+
+.upload-btn {
+	width: 100px;
+	height: 35px;
+    margin: 30px;
+    border-radius: 5px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	border-style: hidden;
+	transition: 0.5s;
+}
+.upload-btn:hover {
+	background-color: #00c3ff;
+}
+
+.course-info {
+    margin: 30px;
+}

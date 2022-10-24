@@ -1,0 +1,23 @@
+.searchFields {
+    position: relative;
+    padding-top: 1%;
+    width: 40vw;
+    margin: 100px auto;
+}
+
+#searchbar {
+    font-size: 25px;
+    height: 45px;
+    width: 33vw;
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#find-button {
+    font-size: 25px;
+    width: 5vw;
+    height: 50px;
+    position: relative;
+    border-radius: 10px;
+}
