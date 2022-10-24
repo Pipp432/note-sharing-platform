@@ -8,9 +8,10 @@ const SearchBar = (searchQuery: any, setSearchQuery: any) => (
                 type="text"
                 id="searchbar"
                 placeholder=" Find notes..."
-                name="s" 
+                name="s"
+                autoComplete="off" 
             />
-            <button type="submit" id="find-button" autoCorrect="off" style={{marginLeft:'5px'}}>Find</button>
+            <button type="submit" id="find-button" style={{marginLeft:'5px'}}>Find</button>
         </div>        
     </form>
 );
