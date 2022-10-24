@@ -21,6 +21,7 @@ const userReducer = (state: any, action: any) => {
 			return (state["user"] = {
 				username: action.payload.username,
 				password: action.payload.password,
+				Login: action.payload.Login,
 			});
 
 		default:
@@ -33,7 +34,7 @@ export const UserContext = createContext<GlobalContextType>(
 );
 
 function App() {
-	const [userState, dispatch] = useReducer(userReducer, {});
+	const [userState, dispatch] = useReducer(userReducer, { Login: false });
 
 	return (
 		<div>
@@ -41,7 +42,7 @@ function App() {
 				value={{ userState: userState, dispatch: dispatch }}
 			>
 				<Router>
-					<MainNavigation />
+					{userState.Login && <MainNavigation />}
 					<main>
 						<Switch>
 							<Route path='/home' exact>

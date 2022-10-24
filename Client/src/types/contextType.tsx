@@ -9,3 +9,12 @@ export type GlobalContextType = {
 	userState: GlobalStateType;
 	dispatch: Dispatch<ActionType>;
 };
+
+export type ItemType = {
+	key: string;
+	type: string;
+	title: string;
+	description: string;
+	alt: string;
+	src: string;
+};

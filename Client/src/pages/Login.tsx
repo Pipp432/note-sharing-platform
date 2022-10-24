@@ -12,7 +12,10 @@ const Login = (props: any) => {
 	const history = useHistory();
 	const submitHandler = (event: any) => {
 		event.preventDefault();
-		dispatch({ type: "ADD", payload: { username: "Pipp", password: "lmao" } });
+		dispatch({
+			type: "ADD",
+			payload: { username: "Pipp", password: "lmao", Login: true },
+		});
 		console.log(userState);
 		history.push("/home");
 	};
