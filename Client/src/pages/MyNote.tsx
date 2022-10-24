@@ -6,7 +6,7 @@ const MyNote = () => {
 	return (
 		<>
 			<Card className='card-stats'>
-				<h1>Catagory</h1>
+				<h1>Category</h1>
 				<Button label='Mechanics' className='filter-button' />
 			</Card>
 			<div className='item-container'>

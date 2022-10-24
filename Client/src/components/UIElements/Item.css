@@ -2,6 +2,7 @@
 	text-align: center;
 	width: 350px;
 	height: 350px;
+	margin: 20px auto;
 }
 .item-button--container {
 	display: flex;
