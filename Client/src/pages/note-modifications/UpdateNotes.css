@@ -1,4 +1,25 @@
 .update-card {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	width: 500px;
 	height: 500px;
+}
+.update-card input {
+	border-radius: 10px;
+	margin: 20px;
+	width: 400px;
+	height: 40px;
+	font-size: 20px;
+}
+.update-card label {
+	margin-top: 10px;
+	font-size: 20px;
+}
+.middle-bottom {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translateX(-50%);
 }

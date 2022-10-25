@@ -16,6 +16,7 @@ const NavLinks = (props: any) => {
 			</li>
 			<li>
 				<select onChange={selectHandler}>
+					<option value={"my_note"}>MY NOTES</option>
 					<option value={"find_note"}>FIND NOTES</option>
 					<option value={"upload_note"}>UPLOAD NOTE</option>
 					<option value={"auth"}>AUTHENTICATE</option>
