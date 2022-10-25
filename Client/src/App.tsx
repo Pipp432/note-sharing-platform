@@ -16,6 +16,7 @@ import Profile from "./pages/Profile";
 import FindNotes from "./pages/FindNotes";
 import Upload from "./pages/Upload";
 import Term from "./pages/Term";
+import UpdateNotes from "./pages/note-modifications/UpdateNotes";
 
 const userReducer = (state: any, action: any) => {
 	console.log("called");
@@ -40,7 +41,7 @@ function App() {
 	const [userState, dispatch] = useReducer(userReducer, { Login: false });
 
 	return (
-		<div>
+		<div className='App'>
 			<UserContext.Provider
 				value={{ userState: userState, dispatch: dispatch }}
 			>
@@ -70,6 +71,9 @@ function App() {
 							</Route>
 							<Route path='/profile' exact>
 								<Profile />
+							</Route>
+							<Route path='/update_notes' exact>
+								<UpdateNotes />
 							</Route>
 
 							<Redirect to='/' />
