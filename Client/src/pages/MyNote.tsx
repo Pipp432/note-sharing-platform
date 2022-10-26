@@ -31,7 +31,7 @@ const MyNote = () => {
 	return (
 		<>
 			<Card className='card-stats'>
-				<h1>Catagory</h1>
+				<h1>Category</h1>
 				{BUTTON_DATA.map((e: any) => (
 					<Button
 						label={e}
@@ -59,7 +59,7 @@ const MyNote = () => {
 			)}
 			{data.length === 0 && (
 				<Card className='card-no-item'>
-					<h1>No Notes in this Catagory. Upload one?</h1>
+					<h1>No Notes in this Category. Upload one?</h1>
 				</Card>
 			)}
 		</>

@@ -9,16 +9,18 @@
 }
 .card-stats {
 	position: absolute;
-	left: 0;
-	width: 400px;
+	left: 14%;
+	top: 26%;
+	width: 25%;
 	height: auto;
 }
 .card-no-item {
 	position: absolute;
-	top: 150px;
-	left: 700px;
+	top: 35%;
+	/* left: 700px; */
+	right: 310px;
 	width: 500px;
-	height: 300px;
+	height: 30%;
 }
 .card-no-item h1 {
 	width: 400px;

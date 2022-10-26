@@ -7,7 +7,7 @@
     border-radius: 20px;    
 	font-family: "Comfortaa";
 	border:solid #DE5C8E 2.5px;
-	box-shadow: none;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
 .upload-btn {

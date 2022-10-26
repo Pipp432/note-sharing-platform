@@ -6,11 +6,11 @@ const SearchBar = (searchQuery: any, setSearchQuery: any) => (
 			<input
 				type='text'
 				id='searchbar'
-				placeholder=' Find notes...'
+				placeholder='Find notes...'
 				name='s'
 				autoComplete='off'
 			/>
-			<button id='find-button' style={{ marginLeft: "5px" }}>
+			<button id='find-button'>
 				Find
 			</button>
 		</div>

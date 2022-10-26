@@ -3,12 +3,13 @@
 	margin: 0;
 	margin-right: 40px;
 	padding: 0;
-	width: 100%;
+	width: 99%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	color: white;
 }
 
 .nav-links li {
@@ -16,7 +17,8 @@
 }
 
 .nav-links a {
-	border: 1px solid transparent;
+	font-family: "Comfortaa-bold";
+	border-style: hidden;
 	color: #292929;
 	text-decoration: none;
 	padding: 0.5rem;
@@ -25,11 +27,12 @@
 .nav-links a:hover,
 .nav-links a:active,
 .nav-links a.active {
-	background: #d471ed;
+	background: #DE5C8E;
 	border-style: hidden;
 	border-radius: 10px;
-
+	font-family: "Comfortaa-bold";
 	color: #292929;
+	transition: 0.25s;
 }
 
 .nav-links button {
@@ -87,4 +90,14 @@
 		background: #f8df00;
 		color: #292929;
 	}
+}
+
+
+.select-option {
+	color: #DE5C8E;
+	background-color: white;
+}
+
+.sel {
+	color: white;
 }

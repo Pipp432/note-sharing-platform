@@ -1,6 +1,7 @@
 import Card from "../components/UIElements/Card";
 import { useState } from "react";
 import "./Upload.css";
+import { Link } from "react-router-dom";
 
 const Upload = () => {
     const [selectedFile, setSelectedFile] = useState();
@@ -33,7 +34,7 @@ const Upload = () => {
                     </div>
                     
                 </form>
-                <button type="submit" className="upload-btn">Upload</button>
+                <Link to='/my_note'><button type="submit" className="upload-btn">Upload</button></Link>
 	
             </Card>
         </>

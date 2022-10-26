@@ -10,16 +10,16 @@ const NavLinks = (props: any) => {
 	return (
 		<ul className='nav-links'>
 			<li>
-				<NavLink to='/my_note' exact>
+				<NavLink style={{fontSize:'large'}} to='/my_note' exact>
 					REWARDS
 				</NavLink>
 			</li>
 			<li className="nav-links">
-				<select onChange={selectHandler}>
-					<option value={"my_note"}>MY NOTES</option>
-					<option value={"find_note"}>FIND NOTES</option>
-					<option value={"upload_note"}>UPLOAD NOTE</option>
-					<option value={"auth"}>AUTHENTICATE</option>
+				<select className="sel" onChange={selectHandler}>
+					<option className="select-option" value={"my_note"}>MY NOTES</option>
+					<option className="select-option" value={"find_note"}>FIND NOTES</option>
+					<option className="select-option" value={"upload_note"}>UPLOAD NOTE</option>
+					<option className="select-option" value={"auth"}>AUTHENTICATE</option>
 				</select>
 			</li>
 
