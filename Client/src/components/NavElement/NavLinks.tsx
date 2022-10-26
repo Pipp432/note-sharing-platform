@@ -14,7 +14,7 @@ const NavLinks = (props: any) => {
 					REWARDS
 				</NavLink>
 			</li>
-			<li>
+			<li className="nav-links">
 				<select onChange={selectHandler}>
 					<option value={"my_note"}>MY NOTES</option>
 					<option value={"find_note"}>FIND NOTES</option>

@@ -1,25 +1,85 @@
 .uploadCard {
-    width: 60vw;
-    height: 50vh;
+    width: 45vw;
+    height: 55vh;
     position: relative;
     margin: auto;
-    margin-top: 25vh;
-    border-radius: 20px;
+    margin-top: 22.5vh;
+    border-radius: 20px;    
+	font-family: "Comfortaa";
+	border:solid #DE5C8E 2.5px;
+	box-shadow: none;
 }
 
 .upload-btn {
-	width: 100px;
-	height: 35px;
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	display: block;
+	width: 120px;
+	height: 45px;
     margin: 30px;
-    border-radius: 5px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	font-size: 20px;
+    border-radius: 7px;
 	border-style: hidden;
 	transition: 0.5s;
+	font-family: "Comfortaa";	
+	border: solid lightgray 2.5px;
 }
+
 .upload-btn:hover {
-	background-color: #00c3ff;
+	background-color: #DE5C8E ;
+	font-family: "Comfortaa";
+	color: white;
+	border: none;
+}
+
+.input-title {
+	font-size: 30px;
+	margin-top: 0;
+}
+
+.input-box {
+	position: relative;
+	height: 45px;
+	width: 60%;
+	padding: 0 15px;
+	font-size: 20px;
+	font-family: 'Comfortaa';
+	color: #666666;	
+	border: solid #DE5C8E 2.5px;	
+    border-radius: 10px;
+	margin-left: 20px;
+}
+
+input[type="file"] {
+	position: relative;
+    font-family: "Comfortaa";
+	font-size: 20px;
+	width: 100%;
+}
+
+::-webkit-file-upload-button {	
+	height: 45px;
+	width: 135px;
+	font-family: "Comfortaa";
+	font-size: 17px;
+	margin: 0 20px;
+	border-radius: 10px;
+	border: none;
+}
+
+::-webkit-file-upload-button:hover {	
+	background-color: #DE5C8E;
+	transition: 0.5s;
+	color: white;
+}
+
+.inputFile {
+	width: 500px;
 }
 
 .course-info {
     margin: 30px;
+	font-family: "Comfortaa";
 }
+
