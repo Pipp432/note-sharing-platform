@@ -1,44 +1,40 @@
 import Card from "../components/UIElements/Card";
-import Button from "../components/UIElements/Button";
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Upload.css";
-import Input from "../components/FormElements/Input";
+import { Link } from "react-router-dom";
 
 const Upload = () => {
     const [selectedFile, setSelectedFile] = useState();
     const [isFilePicked, setIsFilePicked] = useState(false);
 
-    const handleChange = (event: any) => {
-		setSelectedFile(event.target.files[0]);
-		setIsFilePicked(true);
-	};
-
-    const handleUpload = () => {
-	};
+    // const handleChange = (event: any) => {
+	// 	setSelectedFile(event.target.files[0]);
+	// 	setIsFilePicked(true);
+	// };
 
 	return (
         <>
             <Card className='uploadCard'>
-                <h1 style={{margin:'30px'}}>Upload note</h1>
-                <form action="/" method="post">
+                <p style={{margin:'10px 10px 0', fontSize:'40px'}}>Upload notes</p>
+                <form action="/" method="post" style={{margin: '20px'}}>
                     <div className="course-info">
-                        <label htmlFor="cName">Course Name: </label>
-                        <input type="text" name='cName' placeholder="Enter course name..." />
+                        <p className="input-title">Title</p>
+                        <input className="input-box" type="text" name='cName' placeholder="Enter name of the note..." />
                     </div>
 
                     <div className="course-info">
-                        <label htmlFor="cID">Course Id: </label>
-                        <input type="text" name='cID' placeholder="Enter course ID" />
+                        <p className="input-title">Description</p>
+                        <input className="input-box" type="text" name='cDescription' placeholder="Enter a short description..." />
                     </div>
-
+                    
                     <div className="course-info">
-                        <label htmlFor="cDescription">Description: </label>
-                        <input type="text" name='cDescription' placeholder="Enter a short description" />
+                        <p className="input-title">Contents</p>
+                        <input id="uploadPrompt" className="inputfile" type="file" name="file"/>                        
+                        <label htmlFor="file" className="custom-button"></label>
                     </div>
-
-                    <input className="course-info" type="file" name="file" onChange={handleChange}/>
+                    
                 </form>
-                <button type="submit" className="upload-btn">Upload</button>
+                <Link to='/my_note'><button type="submit" className="upload-btn">Upload</button></Link>
 	
             </Card>
         </>

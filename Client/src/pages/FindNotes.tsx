@@ -24,8 +24,7 @@ const FindNotes = () => {
 
 	return (
 		<>
-			<Find
-            />
+			<Find />
             <div className="notes">
                 {filteredPosts.map((e: any) => (
                 <Fragment key={e.title}>
@@ -37,6 +36,7 @@ const FindNotes = () => {
                     />
                 </Fragment>))}
             </div>
+            <div style={{height:'150px'}}></div>
 		</>
 	);
 };
@@ -86,7 +86,7 @@ const allNotes = [
         src: 'https://www.bleepstatic.com/content/hl-images/2022/08/02/green-hacker-bright.jpg'
     },
     {
-        title:'Physics and Electronics for Engineers',
+        title:'Electronics for Engineers',
         description: 'maxwell laws bussin',
         alt: 'phyII.pdf',
         src: 'https://www.ge.com/research/sites/default/files/styles/hero_banner/public/images/capabilities/2020-08/pcb3.jpg?itok=_WvwlMts'
@@ -108,6 +108,12 @@ const allNotes = [
         description:'Ohm\'s law, KCL, KVL, and more',
         alt:'chem1.pdf',
         src:'https://www.makerspaces.com/wp-content/uploads/2017/05/basic-electronics-header-800x400.jpg'
+    },
+    {
+        title:'Reaction Engineering',
+        description:'A difficult subject condensed',
+        alt:'ReactEng.pdf',
+        src:'https://assets.rebelmouse.io/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8xMjAzMzQwMy9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTY5NDgzMDMxN30.qj2oGsR_Okx2fFCC0YlBRRmPhiOTIG1KXVeMO3wiMlQ/img.jpg?width=980'
     },
 
 ];

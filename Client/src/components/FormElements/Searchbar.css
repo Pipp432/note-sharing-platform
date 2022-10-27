@@ -1,6 +1,6 @@
 .searchFields {
     position: relative;
-    padding-top: 1%;
+    padding-top: 4%;
     width: 40vw;
     margin: 100px auto;
 }
@@ -11,7 +11,15 @@
     width: 33vw;
     position: relative;
     margin: auto;
+    padding-left: 20px;
     border-radius: 10px;
+    border-style: hidden;    
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	font-family: "Comfortaa-Bold";
+}
+
+#searchbar:focus {
+    outline: none;
 }
 
 #find-button {
@@ -20,4 +28,14 @@
     height: 50px;
     position: relative;
     border-radius: 10px;
+    border-style: hidden;
+    margin-left: 15px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	font-family: "Comfortaa";
+}
+
+#find-button:hover {
+    color: white;
+    background-color: #404040;
+    transition: 0.5s;
 }

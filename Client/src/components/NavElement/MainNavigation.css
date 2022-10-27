@@ -20,6 +20,7 @@
 .main-navigation__title {
 	color: white;
 	font-family: "Comfortaa-Bold";
+	margin-left: 20px;
 }
 
 .main-navigation__title a {
