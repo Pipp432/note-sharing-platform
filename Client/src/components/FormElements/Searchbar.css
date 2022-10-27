@@ -1,41 +1,42 @@
 .searchFields {
-    position: relative;
-    padding-top: 4%;
-    width: 40vw;
-    margin: 100px auto;
+	position: relative;
+	padding-top: 4%;
+	width: 40vw;
+	margin: 100px auto;
+	display: flex;
 }
 
 #searchbar {
-    font-size: 25px;
-    height: 45px;
-    width: 33vw;
-    position: relative;
-    margin: auto;
-    padding-left: 20px;
-    border-radius: 10px;
-    border-style: hidden;    
+	font-size: 25px;
+	height: 45px;
+	width: 33vw;
+	position: relative;
+	margin: auto;
+	padding-left: 20px;
+	border-radius: 10px;
+	border-style: hidden;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 	font-family: "Comfortaa-Bold";
 }
 
 #searchbar:focus {
-    outline: none;
+	outline: none;
 }
 
 #find-button {
-    font-size: 25px;
-    width: 5vw;
-    height: 50px;
-    position: relative;
-    border-radius: 10px;
-    border-style: hidden;
-    margin-left: 15px;
+	font-size: 25px;
+	width: 5vw;
+	height: 50px;
+	position: relative;
+	border-radius: 10px;
+	border-style: hidden;
+	margin-left: 15px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 	font-family: "Comfortaa";
 }
 
 #find-button:hover {
-    color: white;
-    background-color: #404040;
-    transition: 0.5s;
+	color: white;
+	background-color: #404040;
+	transition: 0.5s;
 }
